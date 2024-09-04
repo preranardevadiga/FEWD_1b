@@ -1,0 +1,50 @@
+body, h1,h2,p{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+header{
+    background-color: rgb(113, 161, 224);
+    color: rgb(178, 215, 230);
+    text-align: center;
+    padding: 1rem;
+}
+main{
+    padding: 2rem;
+}
+.profile{
+    display: flex;
+    align-items: center;
+}
+.photo{
+    flex: 1;
+    padding: 0 2rem;
+}
+.photo img{
+    max-width:100%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgb(0,0,0,2);
+}
+.bio{
+    flex:2;
+}
+footer{
+    text-align: center;
+    padding: 1rem 0;
+    background-color: pink;
+    color: hotpink;
+    position:absolute;
+    bottom:0;
+    width:100%;
+}
+
+@media screen and (max-width:768px){
+    .profile{
+        flex-direction:column;
+    }
+    
+}
